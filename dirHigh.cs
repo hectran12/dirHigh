@@ -63,7 +63,26 @@ namespace dirCsharp
             status = true;
         }
 
-
+        public void deleteAllFileInFolder (string path)
+        {
+            
+            if (Directory.Exists(path))
+            {
+                try
+                {
+                    Directory.Delete(path);
+                    status = true;
+                } catch
+                {
+                    status = false;
+                }
+                
+            } else
+            {
+                status = false;
+            }
+        }
+        
         public long getSizeFolder (string path)
         {
             if (Directory.Exists(path))
