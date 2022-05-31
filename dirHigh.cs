@@ -8,6 +8,7 @@ namespace dirCsharp
 {
     public class dirHigh
     {
+        // functions: copy , create , get size
         /// <summary>
         /// Có cái mới thì update tiếp
         /// </summary>
